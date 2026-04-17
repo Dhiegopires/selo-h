@@ -302,7 +302,12 @@ ul,ol{list-style:none}
 .form-input::placeholder{color:var(--text-dim)}
 .form-label{font-size:14px;font-weight:600;color:var(--text-grey);margin-bottom:8px;display:block}
 .form-group{margin-bottom:20px}
-.form-select{appearance:none;width:100%;background:rgba(255,255,255,0.03) url("data:image/svg+xml,%3Csvg viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239ba0b3' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 16px center;background-size:12px;border:1.5px solid var(--border-mid);border-radius:var(--radius-md);color:var(--text-white);padding:14px 18px;font-size:16px;font-family:var(--font-body);transition:border-color 0.2s,box-shadow 0.2s;outline:none;cursor:pointer}
+.form-select{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;background-color:#1a1a1e;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239ba0b3' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;background-size:10px;border:1.5px solid var(--border-mid);border-radius:var(--radius-md);color:#f9f9fb;padding:14px 18px;font-size:16px;font-family:var(--font-body);transition:border-color 0.2s,box-shadow 0.2s;outline:none;cursor:pointer}
+
+/* Hide default browser arrow */
+.form-select::-ms-expand{display:none}
+.form-select::-webkit-calendar-picker-indicator{display:none}
+.form-select option{background:#1a1a1e;color:#f9f9fb}
 .form-select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(247,95,22,0.12)}
 
 /* ── FOOTER ── */
@@ -890,12 +895,14 @@ ul,ol{list-style:none}
 </footer>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <!-- ══════════════════════════════════════════
      JAVASCRIPT
 ══════════════════════════════════════════ -->
 <script>
 (function(){
+  emailjs.init("z-PlAEFlDtLM58ood");
   'use strict';
 
   /* ── Scroll progress ── */
@@ -970,31 +977,31 @@ ul,ol{list-style:none}
       btn.innerHTML = 'Enviando...';
       btn.disabled = true;
       var formData = new FormData(form);
-      var name = formData.get('name');
-      var email = formData.get('email');
-      var company = formData.get('company');
-      var employees = formData.get('employees');
-      var phone = formData.get('phone') || 'Não informado';
-      var subject = encodeURIComponent('Solicitação de Certificação Selo H — ' + company);
-      var body = encodeURIComponent(
-        'Nome: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Empresa: ' + company + '\n' +
-        'Colaboradores: ' + employees + '\n' +
-        'Telefone: ' + phone + '\n\n' +
-        'Solicito informações sobre o processo de certificação Selo H.'
-      );
-      window.location.href = 'mailto:contato@seloh.com.br?subject=' + subject + '&body=' + body;
-      btn.innerHTML = 'Solicitação enviada ✓';
-      btn.style.background = 'var(--success)';
-      btn.style.borderColor = 'var(--success)';
-      setTimeout(function(){
-        btn.innerHTML = original;
-        btn.style.background = '';
-        btn.style.borderColor = '';
-        btn.disabled = false;
-        form.reset();
-      }, 3000);
+      var templateParams = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        company: formData.get('company'),
+        employees: formData.get('employees'),
+        phone: formData.get('phone') || 'Não informado'
+      };
+      emailjs.send('service_rfab1qq', 'template_igiwgpo', templateParams)
+        .then(function(){
+          btn.innerHTML = 'Solicitação enviada ✓';
+          btn.style.background = 'var(--success)';
+          btn.style.borderColor = 'var(--success)';
+          setTimeout(function(){
+            btn.innerHTML = original;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.disabled = false;
+            form.reset();
+          }, 3000);
+        })
+        .catch(function(err){
+          console.error('Erro ao enviar:', err);
+          btn.innerHTML = 'Tente novamente';
+          btn.disabled = false;
+        });
     });
   }
 })();
