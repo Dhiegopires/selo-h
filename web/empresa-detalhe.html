@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Detalhes da certificação Selo H — Saúde mental no trabalho com padrão internacional.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F75F16">
+
+<link rel="canonical" href="https://seloh.com.br/empresa-detalhe">
+<link rel="icon" type="image/svg+xml" href="../assets/svg/Selo H - Logo.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<title>TechFlow Solutions — Selo H</title>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://seloh.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Empresas Certificadas","item":"https://seloh.com.br/empresas-certificadas"},
+    {"@type":"ListItem","position":3,"name":"TechFlow Solutions","item":"https://seloh.com.br/empresa-detalhe?id=techflow"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg-deep:#050505;--bg-raised:#0d1120;--bg-surface:#111827;
+  --bg-overlay:#1a2035;--bg-cream:#faf8f6;--bg-warm:#f3efe8;
+  --border-faint:rgba(255,255,255,0.05);--border-subtle:rgba(255,255,255,0.08);
+  --border-mid:rgba(255,255,255,0.14);--border-strong:rgba(255,255,255,0.24);
+  --border-inv:rgba(0,0,0,0.08);
+  --text-white:#f9f9fb;--text-grey:#9ba0b3;--text-dim:#4e5468;
+  --text-dark:#1a1a1a;--text-dark-mid:#555;--text-dark-dim:#999;
+  --accent:#F75F16;--accent-hover:#dc4d11;--accent-light:#ffad6e;
+  --accent-dim:rgba(247,95,22,0.10);--accent-glow:rgba(247,95,22,0.25);
+  --success:#10b981;--warning:#f59e0b;--error:#ef4444;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+  --ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+  --max-w:1200px;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;
+  --radius-xl:28px;--radius-pill:999px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--bg-deep);color:var(--text-white);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{border:none;background:none;cursor:pointer;font-family:inherit}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:180px}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 48px}
+@media(max-width:768px){.container{padding:0 24px}}
+
+/* Progress */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:200}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));box-shadow:0 0 12px var(--accent-glow)}
+
+/* Navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;background:rgba(5,5,5,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border-subtle)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center}
+.nav-brand-logo{height:32px;width:auto;transition:opacity 0.2s;filter:brightness(0) invert(1)}
+.nav-brand-logo:hover{opacity:0.85}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-grey);transition:color 0.2s;position:relative}
+.nav-links a:hover{color:var(--text-white)}
+.nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--accent);transition:width 0.3s var(--ease-out)}
+.nav-links a:not(.nav-cta):hover::after{width:100%}
+.nav-links a.active{color:var(--accent)}
+.nav-links a.nav-cta{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-md);font-weight:700;transition:background 0.2s,transform 0.15s;display:inline-flex;align-items:center;gap:6px}
+.nav-links a.nav-cta:hover{background:var(--accent-hover);transform:translateY(-1px);color:#fff}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:110}
+.nav-toggle span{width:22px;height:2px;background:var(--text-white);transition:transform 0.3s,opacity 0.3s}
+.nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+@media(max-width:900px){
+  .nav-inner{padding:0 24px}
+  .nav-toggle{display:flex}
+  .nav-links{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:var(--bg-raised);flex-direction:column;align-items:flex-start;padding:80px 32px 32px;gap:24px;transition:right 0.4s var(--ease-out);border-left:1px solid var(--border-subtle)}
+  .nav-links.open{right:0}
+  .nav-links a{font-size:12px}
+}
+
+/* Eyebrow */
+.eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--accent);flex-shrink:0}
+
+/* Btn */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:var(--radius-md);transition:transform 0.15s,box-shadow 0.25s,background 0.2s,color 0.2s,border-color 0.2s;white-space:nowrap;position:relative;overflow:hidden}
+.btn-solid{color:#050505;background:var(--accent);border:1.5px solid var(--accent);padding:16px 32px;box-shadow:0 4px 16px var(--accent-glow)}
+.btn-solid:hover{background:var(--accent-hover);border-color:var(--accent-hover);transform:translateY(-2px);box-shadow:0 0 40px rgba(247,95,22,0.3)}
+.btn-outline{color:var(--text-grey);background:transparent;border:1.5px solid var(--border-mid);padding:16px 32px}
+.btn-outline:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+
+/* Reveal */
+.reveal{opacity:0;transform:scale(0.96) translateY(12px);transition:opacity 0.8s var(--ease-out),transform 0.8s var(--ease-out)}
+.reveal.visible{opacity:1;transform:scale(1) translateY(0)}
+.d1{transition-delay:0.06s}.d2{transition-delay:0.12s}.d3{transition-delay:0.18s}.d4{transition-delay:0.24s}.d5{transition-delay:0.30s}
+
+/* Heartbeat */
+@keyframes draw-hb{0%{stroke-dashoffset:1200;opacity:0.15}50%{stroke-dashoffset:0;opacity:0.4}100%{stroke-dashoffset:-1200;opacity:0.15}}
+.heartbeat{width:100%;height:48px;overflow:hidden}
+.heartbeat svg{width:100%;height:48px}
+.heartbeat path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:1200;stroke-dashoffset:1200;opacity:0.3;animation:draw-hb 4s ease-in-out infinite}
+
+/* Breadcrumb */
+.breadcrumb{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);display:flex;align-items:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-grey);transition:color 0.2s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb .sep{color:var(--text-dim)}
+
+/* Orbs */
+@keyframes breathe{0%,100%{transform:scale(1);opacity:0.5}50%{transform:scale(1.12);opacity:0.8}}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--accent-dim) 0%,transparent 70%);pointer-events:none;filter:blur(60px);animation:breathe 8s ease-in-out infinite}
+
+/* Glass */
+.glass{background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:32px;position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent)}
+
+/* ── Detail page specifics ── */
+.detail-hero{padding:140px 0 64px;position:relative}
+.detail-hero-grid{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start}
+@media(max-width:900px){.detail-hero-grid{grid-template-columns:1fr}}
+
+.detail-logo{width:80px;height:80px;border-radius:var(--radius-lg);background:var(--bg-surface);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:36px;font-weight:700;color:var(--accent);margin-bottom:20px}
+
+.detail-name{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);font-weight:700;letter-spacing:-0.03em;line-height:1;margin-bottom:12px}
+.detail-sector{font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-bottom:20px}
+.detail-desc{font-size:16px;color:var(--text-grey);line-height:1.75;max-width:540px;margin-bottom:28px}
+
+.detail-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.detail-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:var(--radius-pill);font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;border:1px solid var(--border-subtle);color:var(--text-grey);background:rgba(255,255,255,0.02)}
+.detail-tag.cert{background:rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.2);color:var(--success)}
+.detail-tag.cert::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--success)}
+
+/* Seal badge */
+.seal-badge{width:160px;height:160px;border-radius:50%;background:rgba(247,95,22,0.04);border:2px solid rgba(247,95,22,0.25);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;box-shadow:0 0 60px rgba(247,95,22,0.10),inset 0 0 40px rgba(247,95,22,0.03);flex-shrink:0}
+.seal-badge-h{font-family:var(--font-display);font-size:54px;font-weight:700;color:var(--accent);line-height:1;letter-spacing:-0.04em}
+.seal-badge-label{font-family:var(--font-mono);font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-light);opacity:0.7}
+@media(max-width:900px){.seal-badge{width:120px;height:120px}.seal-badge-h{font-size:40px}}
+
+/* Stats grid */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:48px 0}
+@media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:24px;text-align:center;transition:border-color 0.3s,transform 0.3s}
+.stat-card:hover{border-color:rgba(247,95,22,0.15);transform:translateY(-3px)}
+.stat-card-num{font-family:var(--font-display);font-size:32px;font-weight:700;letter-spacing:-0.03em;line-height:1;color:var(--text-white)}
+.stat-card-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-dim);margin-top:8px}
+
+/* Timeline */
+.timeline{position:relative;padding-left:24px;border-left:2px solid var(--border-subtle)}
+.timeline-item{position:relative;padding:20px 0 20px 24px}
+.timeline-item::before{content:'';position:absolute;left:-6px;top:24px;width:10px;height:10px;border-radius:50%;background:var(--bg-surface);border:2px solid var(--accent)}
+.timeline-date{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.timeline-title{font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--text-white);margin-bottom:4px}
+.timeline-desc{font-size:14px;color:var(--text-grey);line-height:1.65}
+
+/* Testimonial (single) */
+.testimonial-single{background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:40px;position:relative;margin:48px 0}
+.testimonial-single::before{content:'"';position:absolute;top:16px;left:32px;font-family:var(--font-display);font-size:80px;font-weight:700;line-height:1;color:var(--accent);opacity:0.1}
+.testimonial-single-text{font-size:18px;color:var(--text-grey);line-height:1.75;margin-bottom:24px;position:relative;z-index:1;max-width:600px}
+.testimonial-single-author{display:flex;align-items:center;gap:12px}
+.testimonial-single-avatar{width:44px;height:44px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:16px;font-weight:700;color:#050505;flex-shrink:0}
+.testimonial-single-name{font-family:var(--font-display);font-size:15px;font-weight:600;color:var(--text-white)}
+.testimonial-single-role{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim)}
+
+/* Section */
+.detail-section{padding:64px 0;border-top:1px solid var(--border-subtle)}
+.detail-section-title{font-family:var(--font-display);font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-0.03em;margin-bottom:12px}
+.detail-section-sub{font-size:15px;color:var(--text-grey);line-height:1.7;max-width:500px;margin-bottom:32px}
+
+/* Practices list */
+.practices{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:768px){.practices{grid-template-columns:1fr}}
+.practice{display:flex;align-items:flex-start;gap:12px;padding:16px;background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-md);transition:border-color 0.3s}
+.practice:hover{border-color:rgba(247,95,22,0.15)}
+.practice-icon{width:32px;height:32px;border-radius:50%;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.practice-icon svg{width:14px;height:14px;color:var(--accent)}
+.practice-title{font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--text-white);margin-bottom:2px}
+.practice-desc{font-size:13px;color:var(--text-grey);line-height:1.6}
+
+/* CTA */
+.cta-block{text-align:center;padding:96px 48px;position:relative}
+.cta-block h2{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-bottom:20px}
+.cta-block p{font-size:16px;color:var(--text-grey);line-height:1.75;max-width:540px;margin:0 auto 32px}
+
+/* Footer */
+.footer{border-top:1px solid var(--border-subtle);padding:80px 0 40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
+.footer-brand p{font-size:14px;color:var(--text-grey);line-height:1.7;margin-top:16px;max-width:300px}
+.footer-col h4{font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-bottom:20px}
+.footer-col a{display:block;font-size:14px;color:var(--text-grey);margin-bottom:12px;transition:color 0.2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border-subtle);padding-top:24px}
+.footer-bottom p{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;color:var(--text-dim)}
+.footer-bottom a{font-size:12px;color:var(--text-dim);margin-left:24px;transition:color 0.2s}
+.footer-bottom a:hover{color:var(--accent)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:12px;text-align:center}}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<a href="#main" class="sr-only">Pular para conteúdo principal</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+
+<div style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden" aria-hidden="true">
+  <div class="orb" style="width:450px;height:450px;top:-100px;right:-80px"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="Selo H — Início">
+      <img src="images/Selo H - Logo.svg" alt="Selo H" class="nav-brand-logo">
+    </a>
+    <div class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#beneficios">Benefícios</a>
+      <a href="index.html#processo">Processo</a>
+      <a href="index.html#faq">Dúvidas</a>
+      <a href="empresas-certificadas.html" class="active">Empresas</a>
+      <a href="index.html#contato" class="nav-cta">Solicitar Certificação</a>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main">
+
+<!-- Detail Hero -->
+<section class="detail-hero">
+  <div class="container">
+    <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+      <a href="index.html">Início</a>
+      <span class="sep">→</span>
+      <a href="empresas-certificadas.html">Empresas</a>
+      <span class="sep">→</span>
+      <span style="color:var(--text-grey)">TechFlow Solutions</span>
+    </nav>
+
+    <div class="detail-hero-grid">
+      <div class="reveal d1">
+        <div class="detail-logo">TF</div>
+        <h1 class="detail-name">TechFlow Solutions</h1>
+        <div class="detail-sector">Tecnologia · São Paulo, SP</div>
+        <p class="detail-desc">Empresa de tecnologia com 200 colaboradores que implementou um programa completo de bem-estar digital, com pesquisas Pulse trimestrais e ações de prevenção ao burnout.</p>
+        <div class="detail-tags">
+          <span class="detail-tag cert">Certificada — Mar 2025</span>
+          <span class="detail-tag">200 colaboradores</span>
+          <span class="detail-tag">SHO Completa</span>
+          <span class="detail-tag">NR-01 Conforme</span>
+        </div>
+      </div>
+
+      <div class="seal-badge reveal d2" aria-label="Selo H Certificado">
+        <span class="seal-badge-h">H</span>
+        <span class="seal-badge-label">Certificada</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Heartbeat -->
+<div class="heartbeat" aria-hidden="true">
+  <svg viewBox="0 0 1200 48" preserveAspectRatio="none"><path d="M0 24 L300 24 L340 24 L360 8 L380 40 L400 16 L420 32 L440 24 L900 24 L940 24 L960 8 L980 40 L1000 16 L1020 32 L1040 24 L1200 24"/></svg>
+</div>
+
+
+<!-- Stats -->
+<section style="padding:48px 0">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="stat-card-num">87<span style="font-size:18px;color:var(--accent)">%</span></div>
+        <div class="stat-card-label">Índice de engajamento</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">-42<span style="font-size:18px;color:var(--success)">%</span></div>
+        <div class="stat-card-label">Redução de turnover</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">91<span style="font-size:18px;color:var(--accent)">pts</span></div>
+        <div class="stat-card-label">Health Score</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">-38<span style="font-size:18px;color:var(--success)">%</span></div>
+        <div class="stat-card-label">Redução absenteísmo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Práticas Implementadas -->
+<section class="detail-section">
+  <div class="container">
+    <div class="eyebrow reveal">Práticas Implementadas</div>
+    <h2 class="detail-section-title reveal d1">O que a TechFlow<br>fez diferente.</h2>
+    <p class="detail-section-sub reveal d2">Ações concretas que levaram à certificação e aos resultados mensuráveis.</p>
+
+    <div class="practices reveal d3">
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg></div>
+        <div>
+          <div class="practice-title">Pesquisa Pulse Trimestral</div>
+          <div class="practice-desc">Monitoramento contínuo do índice de felicidade e saúde mental dos colaboradores a cada 3 meses.</div>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div>
+          <div class="practice-title">Responsável SHO Capacitado</div>
+          <div class="practice-desc">Profissional dedicado que concluiu a certificação SHO em saúde mental e ciência de dados.</div>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
+        <div>
+          <div class="practice-title">Política de Desconexão Digital</div>
+          <div class="practice-desc">Bloqueio de notificações corporativas fora do horário e sextas sem reuniões.</div>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <div>
+          <div class="practice-title">Plano de Ação por IA</div>
+          <div class="practice-desc">Recomendações personalizadas geradas pelo Agente NR01 Psicossocial com base nos dados das pesquisas.</div>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+        <div>
+          <div class="practice-title">Programa de Prevenção ao Burnout</div>
+          <div class="practice-desc">Identificação precoce de sinais de esgotamento com alertas anônimos e acompanhamento profissional.</div>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div>
+          <div class="practice-title">Dados Anonimizados</div>
+          <div class="practice-desc">Criptografia 256-bit em todas as pesquisas. Apenas métricas agregadas acessíveis pela empresa.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Linha do Tempo -->
+<section class="detail-section">
+  <div class="container">
+    <div class="eyebrow reveal">Jornada</div>
+    <h2 class="detail-section-title reveal d1">Linha do tempo<br>da certificação.</h2>
+
+    <div class="timeline reveal d2" style="max-width:600px">
+      <div class="timeline-item">
+        <div class="timeline-date">Outubro 2024</div>
+        <div class="timeline-title">Início da Capacitação SHO</div>
+        <div class="timeline-desc">Diretora de RH iniciou o curso de Specialist in Mental Health and Data Science.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Novembro 2024</div>
+        <div class="timeline-title">Conclusão SHO + Primeira Pesquisa Pulse</div>
+        <div class="timeline-desc">Certificação SHO concluída. Pesquisa Pulse aplicada para toda a equipe.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Dezembro 2024</div>
+        <div class="timeline-title">Análise de Resultados</div>
+        <div class="timeline-desc">Índice de engajamento: 72%. Health Score: 68. Pontos de melhoria identificados pelo Agente NR01.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Janeiro — Fevereiro 2025</div>
+        <div class="timeline-title">Plano de Ação Implementado</div>
+        <div class="timeline-desc">Política de desconexão digital, programa de prevenção ao burnout e suporte psicológico ativados.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Março 2025</div>
+        <div class="timeline-title">Certificação Selo H Obtida</div>
+        <div class="timeline-desc">Nova pesquisa: engajamento 87%, Health Score 91. Certificação concedida.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Depoimento -->
+<section class="detail-section">
+  <div class="container">
+    <div class="testimonial-single reveal">
+      <p class="testimonial-single-text">"Com o Selo H, nossa empresa conseguiu implementar práticas eficazes de promoção da saúde mental, resultando em um ambiente de trabalho mais saudável e produtivo. A equipe percebeu a diferença no primeiro mês."</p>
+      <div class="testimonial-single-author">
+        <div class="testimonial-single-avatar">MR</div>
+        <div>
+          <div class="testimonial-single-name">Marina Reis</div>
+          <div class="testimonial-single-role">Diretora de RH, TechFlow Solutions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section style="border-top:1px solid var(--border-subtle)">
+  <div class="container">
+    <div class="cta-block reveal">
+      <div class="eyebrow" style="justify-content:center">Sua vez</div>
+      <h2>Quer resultados<br>como estes?</h2>
+      <p>Inicie o processo de certificação e transforme o ambiente de trabalho da sua empresa.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="index.html#contato" class="btn btn-solid">Solicitar certificação →</a>
+        <a href="empresas-certificadas.html" class="btn btn-outline">← Voltar para empresas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+      <div style="margin-bottom:4px">
+          <img src="images/Selo H - Logo.svg" alt="Selo H" style="height:28px;width:auto;filter:brightness(0) invert(1)">
+        </div>
+        <p>A primeira certificação brasileira em saúde mental no trabalho com padrão internacional.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#beneficios">Benefícios</a>
+        <a href="index.html#processo">Processo</a>
+        <a href="index.html#faq">Dúvidas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <a href="empresas-certificadas.html">Empresas Certificadas</a>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="mailto:contato@seloh.com.br">contato@seloh.com.br</a>
+        <p style="font-size:13px;color:var(--text-dim);margin-top:8px">São Paulo, SP — Brasil</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Selo H. Todos os direitos reservados.</p>
+      <div>
+        <a href="politica-privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+<script>
+(function(){
+  'use strict';
+
+  /* Progress */
+  var pf = document.getElementById('progress-fill');
+  window.addEventListener('scroll', function(){
+    pf.style.width = Math.min(window.scrollY / (document.documentElement.scrollHeight - window.innerHeight), 1) * 100 + '%';
+  }, {passive:true});
+
+  /* Mobile nav */
+  var toggle = document.getElementById('nav-toggle');
+  var links = document.getElementById('nav-links');
+  toggle.addEventListener('click', function(){toggle.classList.toggle('open');links.classList.toggle('open')});
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){toggle.classList.remove('open');links.classList.remove('open')});
+  });
+  toggle.addEventListener('keydown', function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle.click()}});
+
+  /* Reveal */
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}
+    });
+  }, {threshold:0.06, rootMargin:'0px 0px -24px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+})();
+</script>
+
+</body>
+</html>

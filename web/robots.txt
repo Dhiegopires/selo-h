@@ -1,0 +1,29 @@
+# Robots.txt for Selo H
+# Last updated: 2024-04-17
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.pdf$
+
+# Specific rules for popular search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://seloh.com.br/sitemap.xml
+Sitemap: https://seloh.com.br/sitemap-news.xml

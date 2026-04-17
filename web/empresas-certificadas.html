@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conheça as empresas certificadas pelo Selo H em saúde mental no trabalho. Organizações que lideram boas práticas em bem-estar corporativo.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F75F16">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Empresas Certificadas — Selo H">
+<meta property="og:description" content="Organizações certificadas pelo Selo H em saúde mental no trabalho com padrão internacional.">
+<meta property="og:url" content="https://seloh.com.br/empresas-certificadas">
+
+<link rel="canonical" href="https://seloh.com.br/empresas-certificadas">
+<link rel="icon" type="image/svg+xml" href="../assets/svg/Selo H - Logo.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<title>Empresas Certificadas — Selo H</title>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://seloh.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Empresas Certificadas","item":"https://seloh.com.br/empresas-certificadas"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg-deep:#050505;--bg-raised:#0d1120;--bg-surface:#111827;
+  --bg-overlay:#1a2035;--bg-cream:#faf8f6;--bg-warm:#f3efe8;
+  --border-faint:rgba(255,255,255,0.05);--border-subtle:rgba(255,255,255,0.08);
+  --border-mid:rgba(255,255,255,0.14);--border-strong:rgba(255,255,255,0.24);
+  --border-inv:rgba(0,0,0,0.08);
+  --text-white:#f9f9fb;--text-grey:#9ba0b3;--text-dim:#4e5468;
+  --text-dark:#1a1a1a;--text-dark-mid:#555;--text-dark-dim:#999;
+  --accent:#F75F16;--accent-hover:#dc4d11;--accent-light:#ffad6e;
+  --accent-dim:rgba(247,95,22,0.10);--accent-glow:rgba(247,95,22,0.25);
+  --success:#10b981;--warning:#f59e0b;--error:#ef4444;
+  --font-display:'Space Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --ease-out:cubic-bezier(0.22,1,0.36,1);
+  --ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+  --max-w:1200px;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;
+  --radius-xl:28px;--radius-pill:999px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--bg-deep);color:var(--text-white);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{border:none;background:none;cursor:pointer;font-family:inherit}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:180px}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 48px}
+@media(max-width:768px){.container{padding:0 24px}}
+
+/* Progress */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:200}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-light));box-shadow:0 0 12px var(--accent-glow)}
+
+/* Navigation (same as index) */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background 0.4s,backdrop-filter 0.4s;background:rgba(5,5,5,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border-subtle)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center}
+.nav-brand-logo{height:32px;width:auto;transition:opacity 0.2s;filter:brightness(0) invert(1)}
+.nav-brand-logo:hover{opacity:0.85}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-grey);transition:color 0.2s;position:relative}
+.nav-links a:hover{color:var(--text-white)}
+.nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--accent);transition:width 0.3s var(--ease-out)}
+.nav-links a:not(.nav-cta):hover::after{width:100%}
+.nav-links a.active{color:var(--accent)}
+.nav-links a.nav-cta{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-md);font-weight:700;transition:background 0.2s,transform 0.15s;display:inline-flex;align-items:center;gap:6px}
+.nav-links a.nav-cta:hover{background:var(--accent-hover);transform:translateY(-1px);color:#fff}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:110}
+.nav-toggle span{width:22px;height:2px;background:var(--text-white);transition:transform 0.3s,opacity 0.3s}
+.nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+@media(max-width:900px){
+  .nav-inner{padding:0 24px}
+  .nav-toggle{display:flex}
+  .nav-links{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:var(--bg-raised);flex-direction:column;align-items:flex-start;padding:80px 32px 32px;gap:24px;transition:right 0.4s var(--ease-out);border-left:1px solid var(--border-subtle)}
+  .nav-links.open{right:0}
+  .nav-links a{font-size:12px}
+}
+
+/* Eyebrow */
+.eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--accent);flex-shrink:0}
+
+/* Btn */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:var(--radius-md);transition:transform 0.15s,box-shadow 0.25s,background 0.2s,color 0.2s,border-color 0.2s;white-space:nowrap;position:relative;overflow:hidden}
+.btn-solid{color:#050505;background:var(--accent);border:1.5px solid var(--accent);padding:16px 32px;box-shadow:0 4px 16px var(--accent-glow)}
+.btn-solid:hover{background:var(--accent-hover);border-color:var(--accent-hover);transform:translateY(-2px);box-shadow:0 0 40px rgba(247,95,22,0.3)}
+.btn-outline{color:var(--text-grey);background:transparent;border:1.5px solid var(--border-mid);padding:16px 32px}
+.btn-outline:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+
+/* Reveal */
+.reveal{opacity:0;transform:scale(0.96) translateY(12px);transition:opacity 0.8s var(--ease-out),transform 0.8s var(--ease-out)}
+.reveal.visible{opacity:1;transform:scale(1) translateY(0)}
+.d1{transition-delay:0.06s}.d2{transition-delay:0.12s}.d3{transition-delay:0.18s}
+.d4{transition-delay:0.24s}.d5{transition-delay:0.30s}.d6{transition-delay:0.36s}
+
+/* Heartbeat */
+@keyframes draw-hb{0%{stroke-dashoffset:1200;opacity:0.15}50%{stroke-dashoffset:0;opacity:0.4}100%{stroke-dashoffset:-1200;opacity:0.15}}
+.heartbeat{width:100%;height:48px;overflow:hidden}
+.heartbeat svg{width:100%;height:48px}
+.heartbeat path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:1200;stroke-dashoffset:1200;opacity:0.3;animation:draw-hb 4s ease-in-out infinite}
+
+/* ── Breadcrumb ── */
+.breadcrumb{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);display:flex;align-items:center;gap:8px;margin-bottom:32px}
+.breadcrumb a{color:var(--text-grey);transition:color 0.2s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb .sep{color:var(--text-dim)}
+
+/* ── Page Hero ── */
+.page-hero{padding:140px 0 64px;position:relative}
+.page-hero h1{font-family:var(--font-display);font-size:clamp(36px,5vw,60px);font-weight:700;letter-spacing:-0.04em;line-height:1;margin-bottom:20px}
+.page-hero h1 em{font-style:normal;color:var(--accent);display:block}
+.page-hero-sub{font-size:17px;color:var(--text-grey);line-height:1.75;max-width:540px;margin-bottom:32px}
+
+/* Stats bar */
+.page-stats{display:flex;gap:32px;flex-wrap:wrap}
+.page-stat{text-align:left}
+.page-stat-num{font-family:var(--font-display);font-size:32px;font-weight:700;letter-spacing:-0.03em;line-height:1}
+.page-stat-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-top:4px}
+
+/* ── Filter bar ── */
+.filter-bar{display:flex;align-items:center;gap:12px;padding:24px 0 40px;border-bottom:1px solid var(--border-subtle);flex-wrap:wrap}
+.filter-btn{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 20px;border-radius:var(--radius-pill);border:1px solid var(--border-mid);color:var(--text-grey);cursor:pointer;transition:all 0.2s;background:transparent}
+.filter-btn:hover{border-color:var(--accent);color:var(--text-white)}
+.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#050505}
+.filter-search{flex:1;min-width:200px;max-width:320px;margin-left:auto;position:relative}
+.filter-search input{width:100%;background:rgba(255,255,255,0.03);border:1px solid var(--border-mid);border-radius:var(--radius-pill);color:var(--text-white);padding:10px 18px 10px 38px;font-size:13px;font-family:var(--font-body);transition:border-color 0.2s;outline:none}
+.filter-search input:focus{border-color:var(--accent)}
+.filter-search input::placeholder{color:var(--text-dim)}
+.filter-search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--text-dim);pointer-events:none}
+
+/* ── Company grid ── */
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:40px 0 0}
+@media(max-width:900px){.company-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.company-grid{grid-template-columns:1fr}}
+
+/* ── Company card ── */
+.company-card{background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:28px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;transition:border-color 0.3s,transform 0.4s var(--ease-out),box-shadow 0.4s}
+.company-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 120%,rgba(247,95,22,0.06) 0%,transparent 60%);opacity:0;transition:opacity 0.5s;pointer-events:none}
+.company-card:hover{border-color:rgba(247,95,22,0.18);transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,0.35)}
+.company-card:hover::before{opacity:1}
+.company-card>*{position:relative;z-index:1}
+
+.company-card-header{display:flex;align-items:center;gap:14px}
+.company-logo{width:52px;height:52px;border-radius:var(--radius-md);background:var(--bg-overlay);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--accent);flex-shrink:0;border:1px solid var(--border-subtle)}
+.company-name{font-family:var(--font-display);font-size:18px;font-weight:600;letter-spacing:-0.02em;color:var(--text-white);line-height:1.2}
+.company-sector{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin-top:2px}
+
+.company-meta{display:flex;flex-wrap:wrap;gap:8px}
+.company-tag{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:var(--radius-pill);font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.03);border:1px solid var(--border-subtle);color:var(--text-grey)}
+.company-tag.cert{background:rgba(16,185,129,0.10);border-color:rgba(16,185,129,0.2);color:var(--success)}
+.company-tag.cert::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--success)}
+
+.company-desc{font-size:14px;color:var(--text-grey);line-height:1.65}
+
+.company-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:14px;border-top:1px solid var(--border-subtle)}
+.company-date{font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim)}
+.company-link{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);transition:opacity 0.2s}
+.company-link:hover{opacity:0.7}
+
+/* ── CTA block ── */
+.cta-block{text-align:center;padding:96px 48px;position:relative}
+.cta-block h2{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-bottom:20px}
+.cta-block p{font-size:16px;color:var(--text-grey);line-height:1.75;max-width:540px;margin:0 auto 32px}
+
+/* ── Footer ── */
+.footer{border-top:1px solid var(--border-subtle);padding:80px 0 40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
+.footer-brand p{font-size:14px;color:var(--text-grey);line-height:1.7;margin-top:16px;max-width:300px}
+.footer-col h4{font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-bottom:20px}
+.footer-col a{display:block;font-size:14px;color:var(--text-grey);margin-bottom:12px;transition:color 0.2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border-subtle);padding-top:24px}
+.footer-bottom p{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;color:var(--text-dim)}
+.footer-bottom a{font-size:12px;color:var(--text-dim);margin-left:24px;transition:color 0.2s}
+.footer-bottom a:hover{color:var(--accent)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:12px;text-align:center}}
+
+/* Orbs */
+@keyframes breathe{0%,100%{transform:scale(1);opacity:0.5}50%{transform:scale(1.12);opacity:0.8}}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--accent-dim) 0%,transparent 70%);pointer-events:none;filter:blur(60px);animation:breathe 8s ease-in-out infinite}
+
+/* Empty state */
+.empty-state{text-align:center;padding:64px 0}
+.empty-state p{color:var(--text-dim);font-size:15px}
+
+/* Pagination */
+.pagination{display:flex;align-items:center;justify-content:center;gap:8px;padding:48px 0 0}
+.pagination-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border-mid);background:transparent;color:var(--text-grey);font-family:var(--font-mono);font-size:12px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
+.pagination-btn:hover{border-color:var(--accent);color:var(--text-white)}
+.pagination-btn.active{background:var(--accent);border-color:var(--accent);color:#050505}
+.pagination-btn:disabled{opacity:0.3;cursor:not-allowed;border-color:var(--border-subtle)}
+.pagination-btn:disabled:hover{border-color:var(--border-subtle);color:var(--text-grey)}
+.pagination-info{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-dim);margin:0 12px}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<a href="#main" class="sr-only">Pular para conteúdo principal</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+
+<div style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden" aria-hidden="true">
+  <div class="orb" style="width:500px;height:500px;top:-120px;right:-100px"></div>
+  <div class="orb" style="width:400px;height:400px;bottom:-80px;left:-60px;animation-delay:3s"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="Selo H — Início">
+      <img src="images/Selo H - Logo.svg" alt="Selo H" class="nav-brand-logo">
+    </a>
+    <div class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#beneficios">Benefícios</a>
+      <a href="index.html#processo">Processo</a>
+      <a href="index.html#faq">Dúvidas</a>
+      <a href="empresas-certificadas.html" class="active">Empresas</a>
+      <a href="index.html#contato" class="nav-cta">Solicitar Certificação</a>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main">
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Início</a>
+      <span class="sep">→</span>
+      <span style="color:var(--text-grey)">Empresas Certificadas</span>
+    </nav>
+
+    <div class="eyebrow reveal">Empresas Certificadas</div>
+    <h1 class="reveal d1">Quem já lidera<br><em>em saúde mental.</em></h1>
+    <p class="page-hero-sub reveal d2">Organizações que completaram o processo de certificação e estão transformando seus ambientes de trabalho.</p>
+
+    <div class="page-stats reveal d3">
+      <div class="page-stat">
+        <div class="page-stat-num" id="count-companies">12</div>
+        <div class="page-stat-label">Empresas certificadas</div>
+      </div>
+      <div class="page-stat">
+        <div class="page-stat-num">5.400<span style="font-size:18px;color:var(--accent)">+</span></div>
+        <div class="page-stat-label">Colaboradores impactados</div>
+      </div>
+      <div class="page-stat">
+        <div class="page-stat-num">8</div>
+        <div class="page-stat-label">Estados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Heartbeat -->
+<div class="heartbeat" aria-hidden="true">
+  <svg viewBox="0 0 1200 48" preserveAspectRatio="none"><path d="M0 24 L300 24 L340 24 L360 8 L380 40 L400 16 L420 32 L440 24 L900 24 L940 24 L960 8 L980 40 L1000 16 L1020 32 L1040 24 L1200 24"/></svg>
+</div>
+
+
+<!-- Filters + Grid -->
+<section style="padding:0 0 128px;position:relative">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="tecnologia">Tecnologia</button>
+      <button class="filter-btn" data-filter="saude">Saúde</button>
+      <button class="filter-btn" data-filter="educacao">Educação</button>
+      <button class="filter-btn" data-filter="consultoria">Consultoria</button>
+      <button class="filter-btn" data-filter="industria">Indústria</button>
+      <div class="filter-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="search-input" placeholder="Buscar empresa..." aria-label="Buscar empresa">
+      </div>
+    </div>
+
+    <div class="company-grid" id="company-grid">
+
+      <!-- Company 1 -->
+      <article class="company-card reveal" data-sector="tecnologia" data-name="TechFlow Solutions">
+        <div class="company-card-header">
+          <div class="company-logo">TF</div>
+          <div>
+            <div class="company-name">TechFlow Solutions</div>
+            <div class="company-sector">Tecnologia</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">200 colaboradores</span>
+          <span class="company-tag">São Paulo, SP</span>
+        </div>
+        <p class="company-desc">Implementou programa completo de bem-estar digital, com pesquisas Pulse trimestrais e ações de prevenção ao burnout.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Mar 2025</span>
+          <a href="empresa-detalhe.html?id=techflow" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 2 -->
+      <article class="company-card reveal d1" data-sector="consultoria" data-name="GrowthCorp">
+        <div class="company-card-header">
+          <div class="company-logo">GC</div>
+          <div>
+            <div class="company-name">GrowthCorp</div>
+            <div class="company-sector">Consultoria</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">85 colaboradores</span>
+          <span class="company-tag">Rio de Janeiro, RJ</span>
+        </div>
+        <p class="company-desc">Referência em gestão de pessoas. Reduziu o turnover em 35% após implementar o plano de ação do Agente NR01.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Fev 2025</span>
+          <a href="empresa-detalhe.html?id=growthcorp" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 3 -->
+      <article class="company-card reveal d2" data-sector="saude" data-name="Nova Vida Saúde">
+        <div class="company-card-header">
+          <div class="company-logo">NV</div>
+          <div>
+            <div class="company-name">Nova Vida Saúde</div>
+            <div class="company-sector">Saúde</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">320 colaboradores</span>
+          <span class="company-tag">Belo Horizonte, MG</span>
+        </div>
+        <p class="company-desc">Grupo hospitalar que priorizou a saúde mental da equipe assistencial. Health Score acima da média em 22%.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Jan 2025</span>
+          <a href="empresa-detalhe.html?id=novavida" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 4 -->
+      <article class="company-card reveal" data-sector="educacao" data-name="EduPrime">
+        <div class="company-card-header">
+          <div class="company-logo">EP</div>
+          <div>
+            <div class="company-name">EduPrime</div>
+            <div class="company-sector">Educação</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">140 colaboradores</span>
+          <span class="company-tag">Brasília, DF</span>
+        </div>
+        <p class="company-desc">Rede de ensino que integrou saúde mental no planejamento pedagógico. Absenteísmo docente reduzido em 40%.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Dez 2024</span>
+          <a href="empresa-detalhe.html?id=eduprime" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 5 -->
+      <article class="company-card reveal d1" data-sector="tecnologia" data-name="DataSphere">
+        <div class="company-card-header">
+          <div class="company-logo">DS</div>
+          <div>
+            <div class="company-name">DataSphere</div>
+            <div class="company-sector">Tecnologia</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">450 colaboradores</span>
+          <span class="company-tag">Florianópolis, SC</span>
+        </div>
+        <p class="company-desc">Empresa de análise de dados que implementou políticas de desconexão digital e suporte psicológico contínuo.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Nov 2024</span>
+          <a href="empresa-detalhe.html?id=datasphere" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 6 -->
+      <article class="company-card reveal d2" data-sector="consultoria" data-name="HumanFirst">
+        <div class="company-card-header">
+          <div class="company-logo">HF</div>
+          <div>
+            <div class="company-name">HumanFirst</div>
+            <div class="company-sector">Consultoria</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">50 colaboradores</span>
+          <span class="company-tag">Curitiba, PR</span>
+        </div>
+        <p class="company-desc">Boutique de RH que certificou primeiro os próprios colaboradores antes de levar a prática para clientes.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Out 2024</span>
+          <a href="empresa-detalhe.html?id=humanfirst" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 7 -->
+      <article class="company-card reveal" data-sector="industria" data-name="Aço Verde Brasil">
+        <div class="company-card-header">
+          <div class="company-logo">AV</div>
+          <div>
+            <div class="company-name">Aço Verde Brasil</div>
+            <div class="company-sector">Indústria</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">1.200 colaboradores</span>
+          <span class="company-tag">Açailândia, MA</span>
+        </div>
+        <p class="company-desc">Siderúrgica que integrou saúde mental no programa de segurança do trabalho. Redução de acidentes correlata com melhoria de clima.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Set 2024</span>
+          <a href="empresa-detalhe.html?id=acoverde" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 8 -->
+      <article class="company-card reveal d1" data-sector="saude" data-name="Clínica Equilíbrio">
+        <div class="company-card-header">
+          <div class="company-logo">CE</div>
+          <div>
+            <div class="company-name">Clínica Equilíbrio</div>
+            <div class="company-sector">Saúde</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">78 colaboradores</span>
+          <span class="company-tag">Salvador, BA</span>
+        </div>
+        <p class="company-desc">Rede de clínicas multidisciplinares que aplicou internamente o que recomendava aos pacientes. Engajamento subiu 28%.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Ago 2024</span>
+          <a href="empresa-detalhe.html?id=equilibrio" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 9 -->
+      <article class="company-card reveal d2" data-sector="tecnologia" data-name="CloudBridge">
+        <div class="company-card-header">
+          <div class="company-logo">CB</div>
+          <div>
+            <div class="company-name">CloudBridge</div>
+            <div class="company-sector">Tecnologia</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">160 colaboradores</span>
+          <span class="company-tag">Porto Alegre, RS</span>
+        </div>
+        <p class="company-desc">SaaS de infraestrutura em nuvem. Equipe 100% remota com acompanhamento de saúde mental individual e coletivo.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Jul 2024</span>
+          <a href="empresa-detalhe.html?id=cloudbridge" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 10 -->
+      <article class="company-card reveal" data-sector="educacao" data-name="Instituto Horizonte">
+        <div class="company-card-header">
+          <div class="company-logo">IH</div>
+          <div>
+            <div class="company-name">Instituto Horizonte</div>
+            <div class="company-sector">Educação</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">95 colaboradores</span>
+          <span class="company-tag">Campinas, SP</span>
+        </div>
+        <p class="company-desc">Instituto de ensino superior que incluiu saúde mental no currículo e no ambiente de trabalho simultaneamente.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Jun 2024</span>
+          <a href="empresa-detalhe.html?id=horizonte" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 11 -->
+      <article class="company-card reveal d1" data-sector="industria" data-name="Cerâmica Atlântica">
+        <div class="company-card-header">
+          <div class="company-logo">CA</div>
+          <div>
+            <div class="company-name">Cerâmica Atlântica</div>
+            <div class="company-sector">Indústria</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">380 colaboradores</span>
+          <span class="company-tag">Criciúma, SC</span>
+        </div>
+        <p class="company-desc">Indústria cerâmica com programa de saúde mental no chão de fábrica. Absenteísmo reduzido em 32%.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Mai 2024</span>
+          <a href="empresa-detalhe.html?id=atlantica" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <!-- Company 12 -->
+      <article class="company-card reveal d2" data-sector="saude" data-name="FarmaVida">
+        <div class="company-card-header">
+          <div class="company-logo">FV</div>
+          <div>
+            <div class="company-name">FarmaVida</div>
+            <div class="company-sector">Saúde</div>
+          </div>
+        </div>
+        <div class="company-meta">
+          <span class="company-tag cert">Certificada</span>
+          <span class="company-tag">240 colaboradores</span>
+          <span class="company-tag">Goiânia, GO</span>
+        </div>
+        <p class="company-desc">Rede farmacêutica que investiu em saúde mental dos atendentes. NPS interno subiu de 42 para 78 em seis meses.</p>
+        <div class="company-card-footer">
+          <span class="company-date">Certificada em Abr 2024</span>
+          <a href="empresa-detalhe.html?id=farmavida" class="company-link">Ver detalhes →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="empty-state" style="display:none">
+      <p>Nenhuma empresa encontrada para este filtro.</p>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section style="border-top:1px solid var(--border-subtle)">
+  <div class="container">
+    <div class="cta-block reveal">
+      <div class="eyebrow" style="justify-content:center">Faça parte</div>
+      <h2>Sua empresa deveria<br>estar nesta lista.</h2>
+      <p>Inicie o processo de certificação e junte-se às organizações que lideram em saúde mental no trabalho.</p>
+      <a href="index.html#contato" class="btn btn-solid">Solicitar certificação →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+      <div style="margin-bottom:4px">
+          <img src="images/Selo H - Logo.svg" alt="Selo H" style="height:28px;width:auto;filter:brightness(0) invert(1)">
+        </div>
+        <p>A primeira certificação brasileira em saúde mental no trabalho com padrão internacional.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#beneficios">Benefícios</a>
+        <a href="index.html#processo">Processo</a>
+        <a href="index.html#faq">Dúvidas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <a href="empresas-certificadas.html">Empresas Certificadas</a>
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="mailto:contato@seloh.com.br">contato@seloh.com.br</a>
+        <p style="font-size:13px;color:var(--text-dim);margin-top:8px">São Paulo, SP — Brasil</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Selo H. Todos os direitos reservados.</p>
+      <div>
+        <a href="politica-privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+<script>
+(function(){
+  'use strict';
+
+  /* Progress bar */
+  var pf = document.getElementById('progress-fill');
+  window.addEventListener('scroll', function(){
+    pf.style.width = Math.min(window.scrollY / (document.documentElement.scrollHeight - window.innerHeight), 1) * 100 + '%';
+  }, {passive:true});
+
+  /* Mobile nav */
+  var toggle = document.getElementById('nav-toggle');
+  var links = document.getElementById('nav-links');
+  toggle.addEventListener('click', function(){
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){toggle.classList.remove('open');links.classList.remove('open')});
+  });
+  toggle.addEventListener('keydown', function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle.click()}});
+
+  /* Reveal */
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}
+    });
+  }, {threshold:0.06, rootMargin:'0px 0px -24px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+
+  /* Filter + Pagination */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var cards = Array.from(document.querySelectorAll('.company-card'));
+  var emptyState = document.getElementById('empty-state');
+  var searchInput = document.getElementById('search-input');
+  var paginationEl = document.getElementById('pagination');
+  var currentFilter = 'all';
+  var currentPage = 1;
+  var perPage = 6;
+
+  function getFilteredCards(){
+    var query = (searchInput.value || '').toLowerCase().trim();
+    return cards.filter(function(card){
+      var matchSector = currentFilter === 'all' || card.dataset.sector === currentFilter;
+      var matchSearch = !query || (card.dataset.name || '').toLowerCase().indexOf(query) !== -1;
+      return matchSector && matchSearch;
+    });
+  }
+
+  function renderPage(){
+    var filtered = getFilteredCards();
+    var totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+    if(currentPage > totalPages) currentPage = totalPages;
+    var start = (currentPage - 1) * perPage;
+    var end = start + perPage;
+
+    cards.forEach(function(c){ c.style.display = 'none'; });
+    filtered.forEach(function(c, i){
+      c.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+
+    emptyState.style.display = filtered.length === 0 ? '' : 'none';
+    renderPagination(totalPages, filtered.length);
+  }
+
+  function renderPagination(totalPages, total){
+    if(totalPages <= 1){ paginationEl.innerHTML = ''; return; }
+    var html = '<button class="pagination-btn" id="pg-prev" aria-label="Página anterior">&larr;</button>';
+    for(var i = 1; i <= totalPages; i++){
+      html += '<button class="pagination-btn' + (i === currentPage ? ' active' : '') + '" data-page="' + i + '">' + i + '</button>';
+    }
+    html += '<button class="pagination-btn" id="pg-next" aria-label="Próxima página">&rarr;</button>';
+    html += '<span class="pagination-info">' + total + ' empresas</span>';
+    paginationEl.innerHTML = html;
+
+    document.getElementById('pg-prev').disabled = currentPage === 1;
+    document.getElementById('pg-next').disabled = currentPage === totalPages;
+
+    paginationEl.querySelectorAll('[data-page]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        currentPage = parseInt(btn.dataset.page);
+        renderPage();
+        window.scrollTo({top: document.querySelector('.filter-bar').offsetTop - 100, behavior:'smooth'});
+      });
+    });
+    document.getElementById('pg-prev').addEventListener('click', function(){
+      if(currentPage > 1){ currentPage--; renderPage(); window.scrollTo({top: document.querySelector('.filter-bar').offsetTop - 100, behavior:'smooth'}); }
+    });
+    document.getElementById('pg-next').addEventListener('click', function(){
+      if(currentPage < totalPages){ currentPage++; renderPage(); window.scrollTo({top: document.querySelector('.filter-bar').offsetTop - 100, behavior:'smooth'}); }
+    });
+  }
+
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      currentPage = 1;
+      renderPage();
+    });
+  });
+
+  searchInput.addEventListener('input', function(){ currentPage = 1; renderPage(); });
+
+  renderPage();
+})();
+</script>
+
+</body>
+</html>
