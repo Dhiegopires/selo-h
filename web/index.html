@@ -946,7 +946,7 @@ ul,ol{list-style:none}
 
   /* ── Active nav link on scroll ── */
   var sections = document.querySelectorAll('.section[id], header');
-  var navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+  var navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
   function updateActiveLink(){
     var scrollPos = window.scrollY + 200;
     sections.forEach(function(sec){
