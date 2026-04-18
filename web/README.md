@@ -233,7 +233,7 @@ Conformidade com **WCAG 2.1 AA**:
 ## 📞 Suporte e Contato
 
 Para questões sobre o website:
-- Email: contato@seloh.com.br
+- Email: contato@seloh.org.br
 - Telefone: (11) 99999-9999
 - Website: https://seloh.com.br
 
