@@ -46,7 +46,7 @@
 ```bash
 # Se não tiver domínio:
 1. Vá em registro.br (Brasil) ou godaddy.com
-2. Busque: seloh.com.br (ou seu nome)
+2. Busque: seloh.org (ou seu nome)
 3. Compre o domínio
 4. Aguarde confirmação
 

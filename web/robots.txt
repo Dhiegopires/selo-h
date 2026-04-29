@@ -25,5 +25,5 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://seloh.com.br/sitemap.xml
-Sitemap: https://seloh.com.br/sitemap-news.xml
+Sitemap: https://seloh.org/sitemap.xml
+Sitemap: https://seloh.org/sitemap-news.xml

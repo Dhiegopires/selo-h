@@ -15,7 +15,7 @@
   RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
   
   # Redirect old URLs (update as needed)
-  # Example: RewriteRule ^old-page\.html$ https://seloh.com.br/new-page [L,R=301]
+  # Example: RewriteRule ^old-page\.html$ https://seloh.org/new-page [L,R=301]
 </IfModule>
 
 # Enable GZIP compression
